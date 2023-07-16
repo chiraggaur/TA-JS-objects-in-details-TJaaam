@@ -3,7 +3,7 @@
 // - Create a class named `Square` which accepts one parameter `side` and will set two property `width` and `height` to the value of `side`.
 
     // class Square {
-    //     contructor(side){  // width & height to side doubt 
+    //     contructor(side){  
             // this.width = width;
             // this.height = height
     //     }
@@ -12,7 +12,7 @@
 // - Add a method named `description` that will alert a message saying `The square is ${width} x ${height}`
 
 // class Square {
-//     contructor(side){  // width & height to side doubt 
+//     contructor(side){  
             // this.width = side;
             // this.height = side;
 //     }
@@ -25,7 +25,7 @@
 
 
 // class Square {
-//     contructor(side){  // width & height to side doubt 
+//     contructor(side){  
             // this.width = side;
             // this.height = side;
 //     }
@@ -41,7 +41,7 @@
 // - Create a getter method named `area` that will return area of the square.
 
 // class Square {
-//     contructor(side){  // width & height to side doubt 
+//     contructor(side){ 
             // this.width = side;
             // this.height = side;
 //     }
@@ -59,7 +59,7 @@
 // - Create a setter method named `area` that will accept a value (the value will be the area of any square like 124). Based on the input value update the `width` and `height` of the square.(The width and the height will be updated to 12 (12 \* 12 = 124))
 
     // class Square {
-    //     contructor(side){  // width & height to side doubt 
+    //     contructor(side){  
     //         this.width = side;
     //         this.height = side;
     //     }
@@ -72,7 +72,7 @@
 // - Create a static method named `isEqual` which accepts two square instance (when you create a new object using the class). If the area of both square is same the method should return `true` or `false`. (Static methods are called directly on the class not in the instance)
 
     // class Square {
-    //     contructor(side){  // width & height to side doubt 
+    //     contructor(side){ 
     //         this.width = width;
     //         this.height = height
     //     }
@@ -170,33 +170,49 @@
 //         this.lastName = lastName;
 
 //     }
-//     set fullName(fullname){
-//            this.firstName = fullname.split(' ')[0];
-//            this.lastName = this.lastName.split(' ')[1];
-
-//            if(fullname.length < 5){
-//                 alert `Full name should be more than 5 characters`;
-//            }
+//     get fullName(){
+//            return this.firstName + this.lastName;
 //     }
-// }   let user1 = new User("Ankit","Bhola"); // doubt
+
+//     set fullName(name){
+//                if(name.length < 5){
+//                 alert `Full name should be more than 5 characters`;
+//            } else {
+//            this.firstName = name.split(' ')[0];
+//            this.lastName = name.split(' ')[1];
+// }
+
+
+
+//     }
+// }   let user1 = new User("Ankit","Bhola"); 
+//       user1.fullName = "Arya Stark"; // setter property is passed not called
 
 // - Check by using the `fullName` setter method with name less than 5 characters.
 
-// class User {
-//     constructor(firstName,lastName){
-//         this.firstName = firstName;
-//         this.lastName = lastName;
+class User {
+    constructor(firstName,lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
 
-//     }
-//     set fullName(fullname){
-//            this.firstName = fullname.split(' ')[0];
-//            this.lastName = this.lastName.split(' ')[1];
+    }
+    get fullName(){
+           return this.firstName + this.lastName;
+    }
 
-//            if(fullname.length < 5){
-//                 alert `Full name should be more than 5 characters`;
-//            }
-//     }
-// }   let user1 = new User("Ankit","Bhola"); // doubt
+    set fullName(name){
+               if(name.length < 5){
+                alert `Full name should be more than 5 characters`;
+           } else {
+           this.firstName = name.split(' ')[0];
+           this.lastName = name.split(' ')[1];
+}
+
+
+
+    }
+}  
+ let user1 = new User("Ankit","Bhola"); // doubt
 
 
 // - Check the `fullName` using getter

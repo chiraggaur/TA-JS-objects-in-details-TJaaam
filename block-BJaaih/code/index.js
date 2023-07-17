@@ -5,6 +5,11 @@
 
 // myMap function goes here
 
+function myMap(){
+ 
+};
+  Object.setPrototypeOf(myMap,Array.prototype);
+
 // Test the myMap function you created above
 
 let numbers = [1, 5, 6, 8, 9];

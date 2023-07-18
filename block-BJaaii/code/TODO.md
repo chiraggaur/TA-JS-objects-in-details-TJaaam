@@ -82,4 +82,5 @@ console.log(atmQueue.isEmpty()); // false
 atmQueue.dequeue();
 atmQueue.dequeue();
 console.log(atmQueue.isEmpty()); // true
+done---not understand first time
 ```
